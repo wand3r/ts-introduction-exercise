@@ -1,5 +1,5 @@
-const pipe = (x, fn1, fn2) => {
-  // ...
+const pipe = <T1, T2, R>(x: T1, fn1: (x: T1) => T2, fn2: (x: T2) => R): R => {
+  return fn2(fn1(x))
 }
 
 const price = pipe(
