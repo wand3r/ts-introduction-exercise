@@ -6,6 +6,9 @@
   "author": "Wojciech Karaś <wkaras89@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test-array-utils": "ts-node ./src/array-utils.ts",
+    "test-object-utils": "ts-node ./src/object-utils.ts",
+    "test-function-utils": "ts-node ./src/function-utils.ts",
     "ts-node": "ts-node"
   },
   "devDependencies": {
