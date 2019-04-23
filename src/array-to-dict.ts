@@ -1,8 +1,16 @@
 import { productsArr } from "./product"
 import { gotCharacters } from "./character"
 
-const arrayToDictionary = ?? => {
-  // ??
+const arrayToDictionary = <T extends { id: string }>(
+  xs: T[]
+): { [id: string]: T } => {
+  return xs.reduce(
+    (acc, x) => {
+      acc[x.id] = x
+      return acc
+    },
+    {} as { [id: string]: T }
+  )
 }
 
 const products = arrayToDictionary(productsArr)
