@@ -9,6 +9,7 @@
     "test-array-utils": "ts-node ./src/array-utils.ts",
     "test-object-utils": "ts-node ./src/object-utils.ts",
     "test-function-utils": "ts-node ./src/function-utils.ts",
+    "test-array-to-dict": "ts-node ./src/array-to-dict.ts",
     "ts-node": "ts-node"
   },
   "devDependencies": {
